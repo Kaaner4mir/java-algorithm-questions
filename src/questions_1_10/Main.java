@@ -1,0 +1,10 @@
+package questions_1_10;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
