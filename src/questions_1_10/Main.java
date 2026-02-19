@@ -159,6 +159,27 @@ public class Main {
 		System.out.println("Girilen sayının basamak sayısı: "+counter);
 		*/
 		
+		// Klavyeden girilen 20 adet sayının çift sayıların tek sayılara olan oranını bulan programı yazınız
+		
+		int totalEvenNumbers = 0;
+		int totalOddNumbers = 0;
+
+		for(int i = 1; i <= 20; i++) {
+
+		    System.out.print(i + ". sayıyı giriniz: ");
+		    int number = scn.nextInt();
+
+		    if(number % 2 == 0)
+		        totalEvenNumbers += number;
+		    else
+		        totalOddNumbers += number;
+		}
+
+		if(totalOddNumbers != 0)
+		    System.out.println("Oran: " + (double) totalEvenNumbers / totalOddNumbers);
+		else
+		    System.out.println("Tek sayıların toplamı 0 olduğu için oran hesaplanamaz.");
+		
 		scn.close();
 	}
 
